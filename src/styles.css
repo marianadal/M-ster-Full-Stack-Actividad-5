@@ -1,30 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .img-responsive{
     max-width: 100%;
 }
 
 .wrapper-post {
-    padding-top: 1rem;
-    padding-bottom: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid gray;
 }
 
 .post-title {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    padding-bottom: 1rem;
 }
 
 .post-date {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 1rem;
 }
 
 .wrapper-image {
-    margin:0;
     text-align: center;
 }
 .post-image {
-    
-    
+    padding-bottom: 1rem;
 }
 
 .post-text {

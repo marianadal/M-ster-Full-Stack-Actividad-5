@@ -16,7 +16,7 @@
     font-weight: 600;
     text-align: center;
     padding-top: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 
 .post__list {
@@ -31,22 +31,21 @@
 .form__wrapper {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: aliceblue;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 .form__title-h1 {
     font-weight: 600;
+    padding-bottom: 1rem;
 }
 
 .form__title-h2 {
     font-size: 20px;
     font-weight: 300;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 .form__label {

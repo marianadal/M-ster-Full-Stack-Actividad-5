@@ -1,43 +1,37 @@
-<section>
-    <!--<article>-->
-        <h2>Lista de noticias</h2>
-        <ul class="post-list" [innerHTML]="postList">
-            <!-- <li>
-                <h1 [class]="title"></h1>
-                <p></p>
-                <p></p>
-                <figure>
-                    <img>
-                </figure>
-            </li> -->
-        </ul>
-    <!-- </article> -->
-</section>
+<div class="wrapper">
+    <!-- Listado de noticias -->
+    <section>
+        <h1 class="post__list-title">Últimas noticias</h1>
+        <ul class="post__list" [innerHTML]="postList"></ul>
+    </section>
 
-<!-- Formulario para publicar noticias -->
-<div class="form__post-list"> <!--De momento aún no puedo llamar "form" a esta etiqueta-->
-    <input type="hidden" value="form__post-list" />
-    <div>
-        <label class="form__label" for="title">Título</label>
-        <input class="form__input-placeholder" type="text" id="title" placeholder="Impactante título de la noticia" 
-            name="title" alt="titulo" [(ngModel)]="title"/>
-    </div>
-    <div>
-        <label class="form__label" for="picture">Imagen</label>
-        <input class="form__input-placeholder" type="img" id="picture" placeholder="https//...." 
-            name="picture" alt="imagen" [(ngModel)]="picture"/>
-    </div>
-    <div>
-        <label class="form__label" for="text">Texto de la noticia</label>
-        <input class="form__input-placeholder" type="text" id="text" placeholder="En un lugar de La Mancha..." 
-            name="text" alt="texto de la noticia" [(ngModel)]="text" />
-    </div>
-    <div>
-        <label class="form__label" for="dataPost">Fecha de publicación</label>
-        <input class="form__input-placeholder" type="data" id="dataPost" placeholder="01/01/2023" 
-            name="dataPost" alt="fecha de publicacion" [(ngModel)]="dataPost"/>
-    </div>
-    <div>
-        <button type="submit" class="button" alt="enviar" (click)="savePost()">Publicar</button>
+    <!-- Formulario para publicar noticias -->
+    <div class="form__wrapper"> <!--De momento aún no puedo llamar "form" a esta etiqueta-->
+        <input type="hidden" value="form__post" />
+        <h1 class="form__title-h1">¿Tienes una vivécdota de tu perrete o michi digna de contar? ¡Compártela con el mundo!</h1>
+        <h2 class="form__title-h2">Ponle título, una imagen potente, lo que nos quieras contar, la fecha de publicación, pulsa "Publicar" y automáticamente aparecerá en las últimas noticias.</h2>
+        <div>
+            <label class="form__label" for="title">Título de la noticia: </label>
+            <input class="form__input-placeholder" type="text" id="title" placeholder="Impactante título de la noticia"
+                alt="titulo" [(ngModel)]="title" />
+        </div>
+        <div>
+            <label class="form__label" for="picture">URL de la imagen: </label>
+            <input class="form__input-placeholder" type="url" id="picture" placeholder="https//..." alt="imagen"
+                [(ngModel)]="url" />
+        </div>
+        <div>
+            <label class="form__label" for="text">Texto de la noticia: </label>
+            <textarea class="form__input-placeholder-textarea" type="text" id="text" rows="5" placeholder="Un día mi perrete estaba..."
+                alt="texto de la noticia" [(ngModel)]="text"></textarea>
+        </div>
+        <div>
+            <label class="form__label" for="dataPost">Fecha de publicación: </label>
+            <input class="form__input-placeholder" type="date" id="dataPost" alt="fecha de publicacion"
+                [(ngModel)]="date" />
+        </div>
+        <div>
+            <button type="submit" class="button" alt="enviar" (click)="savePost()">Publicar</button>
+        </div>
     </div>
 </div>

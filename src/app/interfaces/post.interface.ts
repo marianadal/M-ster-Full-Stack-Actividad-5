@@ -1,6 +1,6 @@
 export interface Post {
     title: string;
-    dataPost: string;
-    picture: string;
+    date: string;
+    url: string;
     text: string;
 }

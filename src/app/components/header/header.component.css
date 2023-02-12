@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header__h1,
+.header__h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.header__h1 {
+    font-size: 120px;
+    font-weight: 700;
+}
+
+.header__h2 {
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid grey;
+}
